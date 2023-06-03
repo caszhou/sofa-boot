@@ -1,9 +1,6 @@
 stages:
   - release
 
-variables:
-  JAVA_HOME: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.362.b08-1.el7_9.x86_64
-
 job_release:
   stage: release
   when: manual
@@ -12,6 +9,7 @@ job_release:
   only:
     - feature/zxj/yzc
   script:
+    - export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.362.b08-1.el7_9.x86_64
     - mvn -v
 #    - mvn clean install -DskipTests
 #    - mvn deploy
