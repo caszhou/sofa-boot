@@ -37,7 +37,7 @@
     <description>SOFABoot Build</description>
 
     <properties>
-        <revision>3.18.0</revision>
+        <revision>3.18.0.0</revision>
         <sofa.boot.version>${revision}</sofa.boot.version>
         <!--maven plugin-->
         <maven.staging.plugin>1.6.7</maven.staging.plugin>
@@ -138,7 +138,7 @@
             <distributionManagement>
                 <repository>
                     <id>ossrh</id>
-                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                    <url>http://nexus.yzcznwl.com/repository/maven-public/</url>
                 </repository>
             </distributionManagement>
         </profile>
@@ -177,7 +177,7 @@
             <distributionManagement>
                 <snapshotRepository>
                     <id>ossrh</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <url>http://nexus.yzcznwl.com/repository/maven-snapshots</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>
@@ -189,14 +189,14 @@
                         <enabled>false</enabled>
                     </snapshots>
                     <id>release</id>
-                    <url>https://oss.sonatype.org/content/repositories/releases</url>
+                    <url>http://nexus.yzcznwl.com/repository/maven-releases</url>
                 </repository>
                 <repository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
                     <id>snapshot</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <url>http://nexus.yzcznwl.com/repository/maven-snapshots</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -205,14 +205,14 @@
                         <enabled>false</enabled>
                     </snapshots>
                     <id>releases</id>
-                    <url>https://oss.sonatype.org/content/repositories/releases</url>
+                    <url>http://nexus.yzcznwl.com/repository/maven-releases</url>
                 </pluginRepository>
                 <pluginRepository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
                     <id>snapshot</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                    <url>http://nexus.yzcznwl.com/repository/maven-snapshots</url>
                 </pluginRepository>
             </pluginRepositories>
         </profile>
