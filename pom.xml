@@ -137,8 +137,8 @@
 <!--            </build>-->
             <distributionManagement>
                 <repository>
-                    <id>ossrh</id>
-                    <url>http://nexus.yzcznwl.com/repository/maven-public/</url>
+                    <id>deployRelease</id>
+                    <url>http://nexus.yzcznwl.com/repository/maven-releases/</url>
                 </repository>
             </distributionManagement>
         </profile>
@@ -176,8 +176,8 @@
 <!--            </build>-->
             <distributionManagement>
                 <snapshotRepository>
-                    <id>ossrh</id>
-                    <url>http://nexus.yzcznwl.com/repository/maven-snapshots</url>
+                    <id>deploySnapshot</id>
+                    <url>http://nexus.yzcznwl.com/repository/maven-snapshots/</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>
