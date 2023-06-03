@@ -16,6 +16,7 @@
         <main.user.dir>${basedir}/../../..</main.user.dir>
         <sofa.rpc.compiler.version>0.0.3</sofa.rpc.compiler.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <os.detected.classifier>osx-x86_64</os.detected.classifier>
     </properties>
 
     <dependencies>
