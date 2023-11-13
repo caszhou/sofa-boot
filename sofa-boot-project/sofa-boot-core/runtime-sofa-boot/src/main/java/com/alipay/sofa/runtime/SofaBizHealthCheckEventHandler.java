@@ -30,7 +30,7 @@ public class SofaBizHealthCheckEventHandler implements EventHandler<AfterBizStar
 
     @Override
     public void handleEvent(AfterBizStartupEvent event) {
-//        doHealthCheck(event.getSource());
+        //        doHealthCheck(event.getSource());
     }
 
     private void doHealthCheck(Biz biz) {
