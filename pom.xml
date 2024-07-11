@@ -26,7 +26,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.13</version>
         <!-- Add this to resolve to repository -->
-        <relativePath />
+        <relativePath/>
     </parent>
 
     <groupId>com.alipay.sofa</groupId>
@@ -100,84 +100,84 @@
     <profiles>
         <profile>
             <id>release</id>
-<!--            <build>-->
-<!--                <plugins>-->
-<!--                    <plugin>-->
-<!--                        <groupId>org.sonatype.plugins</groupId>-->
-<!--                        <artifactId>nexus-staging-maven-plugin</artifactId>-->
-<!--                        <version>${maven.staging.plugin}</version>-->
-<!--                        <extensions>true</extensions>-->
-<!--                        <configuration>-->
-<!--                            <serverId>ossrh</serverId>-->
-<!--                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
-<!--                            <autoReleaseAfterClose>false</autoReleaseAfterClose>-->
-<!--                        </configuration>-->
-<!--                    </plugin>-->
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-gpg-plugin</artifactId>-->
-<!--                        <version>${maven.gpg.pluign}</version>-->
-<!--                        <executions>-->
-<!--                            <execution>-->
-<!--                                <id>sign-artifacts</id>-->
-<!--                                <phase>verify</phase>-->
-<!--                                <goals>-->
-<!--                                    <goal>sign</goal>-->
-<!--                                </goals>-->
-<!--                            </execution>-->
-<!--                        </executions>-->
-<!--                        <configuration>-->
-<!--                            <gpgArguments>-->
-<!--                                <arg>&#45;&#45;pinentry-mode</arg>-->
-<!--                                <arg>loopback</arg>-->
-<!--                            </gpgArguments>-->
-<!--                        </configuration>-->
-<!--                    </plugin>-->
-<!--                </plugins>-->
-<!--            </build>-->
+            <!--            <build>-->
+            <!--                <plugins>-->
+            <!--                    <plugin>-->
+            <!--                        <groupId>org.sonatype.plugins</groupId>-->
+            <!--                        <artifactId>nexus-staging-maven-plugin</artifactId>-->
+            <!--                        <version>${maven.staging.plugin}</version>-->
+            <!--                        <extensions>true</extensions>-->
+            <!--                        <configuration>-->
+            <!--                            <serverId>ossrh</serverId>-->
+            <!--                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
+            <!--                            <autoReleaseAfterClose>false</autoReleaseAfterClose>-->
+            <!--                        </configuration>-->
+            <!--                    </plugin>-->
+            <!--                    <plugin>-->
+            <!--                        <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                        <artifactId>maven-gpg-plugin</artifactId>-->
+            <!--                        <version>${maven.gpg.pluign}</version>-->
+            <!--                        <executions>-->
+            <!--                            <execution>-->
+            <!--                                <id>sign-artifacts</id>-->
+            <!--                                <phase>verify</phase>-->
+            <!--                                <goals>-->
+            <!--                                    <goal>sign</goal>-->
+            <!--                                </goals>-->
+            <!--                            </execution>-->
+            <!--                        </executions>-->
+            <!--                        <configuration>-->
+            <!--                            <gpgArguments>-->
+            <!--                                <arg>&#45;&#45;pinentry-mode</arg>-->
+            <!--                                <arg>loopback</arg>-->
+            <!--                            </gpgArguments>-->
+            <!--                        </configuration>-->
+            <!--                    </plugin>-->
+            <!--                </plugins>-->
+            <!--            </build>-->
             <distributionManagement>
                 <repository>
                     <id>deployRelease</id>
-                    <url>http://nexus.sz-hm.cn/repository/maven-releases/</url>
+                    <url>http://nexus.sipa.com/repository/maven-releases/</url>
                 </repository>
             </distributionManagement>
         </profile>
 
         <profile>
             <id>snapshot</id>
-<!--            <build>-->
-<!--                <plugins>-->
-<!--                    <plugin>-->
-<!--                        <groupId>org.sonatype.plugins</groupId>-->
-<!--                        <artifactId>nexus-staging-maven-plugin</artifactId>-->
-<!--                        <version>${maven.staging.plugin}</version>-->
-<!--                        <extensions>true</extensions>-->
-<!--                        <configuration>-->
-<!--                            <serverId>ossrh</serverId>-->
-<!--                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
-<!--                            <autoReleaseAfterClose>false</autoReleaseAfterClose>-->
-<!--                        </configuration>-->
-<!--                    </plugin>-->
-<!--                    <plugin>-->
-<!--                        <groupId>org.apache.maven.plugins</groupId>-->
-<!--                        <artifactId>maven-gpg-plugin</artifactId>-->
-<!--                        <version>${maven.gpg.pluign}</version>-->
-<!--                        <executions>-->
-<!--                            <execution>-->
-<!--                                <id>sign-artifacts</id>-->
-<!--                                <phase>verify</phase>-->
-<!--                                <goals>-->
-<!--                                    <goal>sign</goal>-->
-<!--                                </goals>-->
-<!--                            </execution>-->
-<!--                        </executions>-->
-<!--                    </plugin>-->
-<!--                </plugins>-->
-<!--            </build>-->
+            <!--            <build>-->
+            <!--                <plugins>-->
+            <!--                    <plugin>-->
+            <!--                        <groupId>org.sonatype.plugins</groupId>-->
+            <!--                        <artifactId>nexus-staging-maven-plugin</artifactId>-->
+            <!--                        <version>${maven.staging.plugin}</version>-->
+            <!--                        <extensions>true</extensions>-->
+            <!--                        <configuration>-->
+            <!--                            <serverId>ossrh</serverId>-->
+            <!--                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>-->
+            <!--                            <autoReleaseAfterClose>false</autoReleaseAfterClose>-->
+            <!--                        </configuration>-->
+            <!--                    </plugin>-->
+            <!--                    <plugin>-->
+            <!--                        <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                        <artifactId>maven-gpg-plugin</artifactId>-->
+            <!--                        <version>${maven.gpg.pluign}</version>-->
+            <!--                        <executions>-->
+            <!--                            <execution>-->
+            <!--                                <id>sign-artifacts</id>-->
+            <!--                                <phase>verify</phase>-->
+            <!--                                <goals>-->
+            <!--                                    <goal>sign</goal>-->
+            <!--                                </goals>-->
+            <!--                            </execution>-->
+            <!--                        </executions>-->
+            <!--                    </plugin>-->
+            <!--                </plugins>-->
+            <!--            </build>-->
             <distributionManagement>
                 <snapshotRepository>
                     <id>deploySnapshot</id>
-                    <url>http://nexus.sz-hm.cn/repository/maven-snapshots/</url>
+                    <url>http://nexus.sipa.com/repository/maven-snapshots/</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>
@@ -189,14 +189,14 @@
                         <enabled>false</enabled>
                     </snapshots>
                     <id>release</id>
-                    <url>http://nexus.sz-hm.cn/repository/maven-releases</url>
+                    <url>http://nexus.sipa.com/repository/maven-releases</url>
                 </repository>
                 <repository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
                     <id>snapshot</id>
-                    <url>http://nexus.sz-hm.cn/repository/maven-snapshots</url>
+                    <url>http://nexus.sipa.com/repository/maven-snapshots</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -205,14 +205,14 @@
                         <enabled>false</enabled>
                     </snapshots>
                     <id>releases</id>
-                    <url>http://nexus.sz-hm.cn/repository/maven-releases</url>
+                    <url>http://nexus.sipa.com/repository/maven-releases</url>
                 </pluginRepository>
                 <pluginRepository>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
                     <id>snapshot</id>
-                    <url>http://nexus.sz-hm.cn/repository/maven-snapshots</url>
+                    <url>http://nexus.sipa.com/repository/maven-snapshots</url>
                 </pluginRepository>
             </pluginRepositories>
         </profile>
